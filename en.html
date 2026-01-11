@@ -9,6 +9,8 @@
     <style>
         body { font-family: 'Inter', sans-serif; color: #374151; scroll-behavior: smooth; }
         .accent-border { border-left: 4px solid #57A9B6; }
+        .partner-logo { transition: all 0.3s ease; filter: none; opacity: 1; }
+        .group:hover .partner-logo { transform: scale(1.05); }
     </style>
 </head>
 <body class="bg-white">
@@ -19,12 +21,14 @@
                 <div class="flex items-center">
                     <img src="assets/logo.png" alt="NRG Prime Logo" class="h-28 md:h-32 w-auto py-2 object-contain">
                 </div>
+                
                 <div class="flex items-center space-x-8">
                     <div class="hidden md:flex space-x-8 text-xs font-bold uppercase tracking-widest text-gray-600">
                         <a href="#about" class="hover:text-blue-600 transition">About</a>
                         <a href="#partners" class="hover:text-blue-600 transition">Equipment</a>
                         <a href="#services" class="hover:text-blue-600 transition">Services</a>
                     </div>
+                    
                     <div class="flex items-center space-x-2 border-l pl-8 text-xs font-bold">
                         <a href="index.html" class="text-gray-500 hover:text-blue-600 transition">RU</a>
                         <span class="text-gray-300">|</span>
@@ -38,10 +42,10 @@
     </nav>
 
     <header class="relative py-24 bg-slate-50 overflow-hidden border-b border-gray-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center md:text-left">
             <h1 class="text-5xl font-extrabold text-gray-900 mb-6 tracking-tight">NRG Prime</h1>
             <p class="text-xl text-gray-600 max-w-3xl leading-relaxed mb-10">
-                Direct supply of high-tech industrial equipment from Italy and Europe. 
+                Direct supplies of high-tech industrial equipment from Italy and Europe. 
                 Full-cycle engineering solutions for the mining and energy sectors of Kazakhstan.
             </p>
             <div class="flex flex-col md:flex-row gap-4 justify-center md:justify-start">
@@ -57,18 +61,18 @@
                 <div>
                     <h2 class="text-3xl font-bold mb-8 text-gray-900 uppercase tracking-tight">From Experience to Innovation</h2>
                     <p class="text-gray-600 mb-6 leading-relaxed text-lg font-light">
-                        Formerly known as <strong>"New Mining Developments" (NGR)</strong>, we have undergone a significant brand transformation to <strong>NRG Prime</strong>. This decision was driven by our entry into a new international level.
+                        Formerly known as <strong>NGR (New Mining Developments)</strong>, we have undergone a major brand transformation to <strong>NRG Prime</strong>. This decision was driven by the company's entry into a new international level.
                     </p>
                     <p class="text-gray-600 mb-8 leading-relaxed italic">
-                        Today, we serve as an official bridge between leading European factories and enterprises in Kazakhstan, providing not only supply but also expert technological support.
+                        Today, we serve as an official link between leading European factories and enterprises in Kazakhstan.
                     </p>
                 </div>
-                <div class="bg-slate-50 p-10 rounded-2xl border border-gray-200">
+                <div class="bg-slate-50 p-10 rounded-2xl border border-gray-200 shadow-inner">
                     <h3 class="font-bold text-sm uppercase tracking-widest text-blue-800 mb-6">Our Advantages:</h3>
                     <ul class="space-y-4 text-gray-700">
-                        <li class="flex items-start"><span class="text-blue-500 mr-3">✓</span> Direct contracts with factories in Italy and Czech Republic</li>
+                        <li class="flex items-start"><span class="text-blue-500 mr-3">✓</span> Direct contracts with Italian and Czech factories</li>
                         <li class="flex items-start"><span class="text-blue-500 mr-3">✓</span> In-house logistics and customs clearance department</li>
-                        <li class="flex items-start"><span class="text-blue-500 mr-3">✓</span> Deep expertise in industrial engineering</li>
+                        <li class="flex items-start"><span class="text-blue-500 mr-3">✓</span> Deep expertise in industrial design</li>
                     </ul>
                 </div>
             </div>
@@ -83,41 +87,46 @@
             </div>
             
             <div class="grid lg:grid-cols-3 md:grid-cols-1 gap-10">
-                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between">
+                <div class="group bg-white p-8 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between hover:shadow-md transition">
                     <div>
-                        <h3 class="text-2xl font-bold mb-6 text-gray-900">MATEC Industries (Italy)</h3>
+                        <div class="bg-slate-900 inline-block p-2 rounded mb-6">
+                            <img src="assets/matec.png" alt="Matec Logo" class="h-10 w-auto object-contain partner-logo">
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-gray-900">MATEC Industries (Italy)</h3>
                         <p class="text-sm text-gray-700 leading-relaxed mb-6">
-                            World leader in wastewater treatment and sludge filtration systems. <strong>HPT (20 Bar)</strong> high-pressure technology guarantees maximum cake dryness.
+                            World leader in complete filtration and wastewater treatment systems. <strong>HPT (20 Bar)</strong> high-pressure technology guarantees the maximum degree of cake dryness.
                         </p>
                         <ul class="text-xs text-gray-500 space-y-2 mb-8 uppercase tracking-wide font-semibold">
                             <li>• Industrial Filter Presses (Terrae, Magnum)</li>
-                            <li>• Bifloc Flocculant Preparation Plants</li>
+                            <li>• Bifloc Flocculant Preparation Stations</li>
                             <li>• Aggretec Sand Washing Plants</li>
                         </ul>
                     </div>
-                    <a href="docs/matec-catalog.pdf" class="text-blue-700 text-sm font-bold hover:text-blue-900 border-t pt-4">DOWNLOAD MATEC CATALOG →</a>
+                    <a href="docs/matec-catalog.pdf" class="text-blue-700 text-sm font-bold hover:text-blue-900 border-t pt-4 uppercase tracking-tighter">Download MATEC Catalog →</a>
                 </div>
 
-                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between">
+                <div class="group bg-white p-8 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between hover:shadow-md transition">
                     <div>
-                        <h3 class="text-2xl font-bold mb-6 text-gray-900">ALFA Pompe (Italy)</h3>
+                        <img src="assets/alfa.svg" alt="Alfa Pompe Logo" class="h-12 w-auto mb-6 object-contain partner-logo">
+                        <h3 class="text-2xl font-bold mb-4 text-gray-900">ALFA Pompe (Italy)</h3>
                         <p class="text-sm text-gray-700 leading-relaxed mb-6">
-                            Specialized pump production for extremely abrasive environments. Hydrodynamic modeling minimizes wear on critical components.
+                            Specialized pump manufacturing for extremely abrasive environments. Hydrodynamic modeling application minimizes the wear of operating components.
                         </p>
                         <ul class="text-xs text-gray-500 space-y-2 mb-8 uppercase tracking-wide font-semibold">
                             <li>• Horizontal and Vertical Slurry Pumps</li>
                             <li>• Submersible Pumps with Rubber Lining</li>
-                            <li>• Pumps for Hydrocyclone Feed</li>
+                            <li>• Pumps for Hydrocyclone Feeding</li>
                         </ul>
                     </div>
-                    <a href="docs/alfa-catalog.pdf" class="text-blue-700 text-sm font-bold hover:text-blue-900 border-t pt-4">DOWNLOAD ALFA POMPE CATALOG →</a>
+                    <a href="docs/alfa-catalog.pdf" class="text-blue-700 text-sm font-bold hover:text-blue-900 border-t pt-4 uppercase tracking-tighter">Download ALFA Catalog →</a>
                 </div>
 
-                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between">
+                <div class="group bg-white p-8 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between hover:shadow-md transition">
                     <div>
-                        <h3 class="text-2xl font-bold mb-6 text-gray-900">Italian Fluid Machines</h3>
+                        <img src="assets/ifm.png" alt="IFM Logo" class="h-12 w-auto mb-6 object-contain partner-logo">
+                        <h3 class="text-2xl font-bold mb-4 text-gray-900">Italian Fluid Machines</h3>
                         <p class="text-sm text-gray-700 leading-relaxed mb-6">
-                            Innovative pump and compressor equipment for petrochemicals. Skid-mounted systems manufactured according to API international standards.
+                            Innovative pumping and compressor equipment for petrochemistry. Skid-mounted system manufacturing according to international API standards.
                         </p>
                         <ul class="text-xs text-gray-500 space-y-2 mb-8 uppercase tracking-wide font-semibold">
                             <li>• Liquid Ring Compressors</li>
@@ -125,7 +134,7 @@
                             <li>• Flare Gas Recovery Systems</li>
                         </ul>
                     </div>
-                    <p class="text-gray-400 text-xs italic border-t pt-4">Technical information available upon request</p>
+                    <p class="text-gray-400 text-xs italic border-t pt-4">Technical info upon request</p>
                 </div>
             </div>
         </div>
@@ -135,21 +144,23 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl font-bold mb-16 uppercase tracking-widest text-center">Engineering & Special Projects</h2>
             <div class="grid lg:grid-cols-2 gap-12">
-                <div class="accent-border p-8 bg-slate-50 rounded-r-xl">
+                <div class="group accent-border p-8 bg-slate-50 rounded-r-xl transition hover:bg-slate-100">
+                    <img src="assets/nuvia.png" alt="Nuvia Logo" class="h-10 w-auto mb-6 object-contain partner-logo">
                     <h3 class="text-2xl font-bold mb-4 text-blue-900">NUVIA (Czech Republic)</h3>
-                    <p class="text-gray-700 mb-6 font-light">Expert solutions for nuclear power and radiation monitoring systems.</p>
+                    <p class="text-gray-700 mb-6 font-light">Expert solutions for nuclear energy and radiation control systems.</p>
                     <ul class="space-y-3 text-sm text-gray-600">
-                        <li>• Supply and service for Nuclear Power Plants</li>
+                        <li>• Equipment Supply and Service for Nuclear Power Plants</li>
                         <li>• Radiation Monitoring Systems (RMS)</li>
-                        <li>• Production and service of precision detectors</li>
+                        <li>• Production and Service of Precision Detectors</li>
                     </ul>
                 </div>
-                <div class="accent-border p-8 bg-slate-50 rounded-r-xl border-blue-800">
+                <div class="group accent-border p-8 bg-slate-50 rounded-r-xl border-blue-800 transition hover:bg-slate-100">
+                    <img src="assets/energowise.png" alt="EnergoWise Logo" class="h-10 w-auto mb-6 object-contain partner-logo">
                     <h3 class="text-2xl font-bold mb-4 text-blue-900">EnergoWise Consulting LLC FZ</h3>
-                    <p class="text-gray-700 mb-6 font-light">Complex technological design via our UAE partner.</p>
+                    <p class="text-gray-700 mb-6 font-light">Comprehensive technological design via partner in UAE.</p>
                     <ul class="space-y-3 text-sm text-gray-600">
-                        <li>• Technological design of industrial facilities</li>
-                        <li>• Environmental consulting, audit, and Feasibility Studies</li>
+                        <li>• Technological Design of Industrial Facilities</li>
+                        <li>• Environmental Consulting, Auditing, and Feasibility Studies</li>
                         <li>• Development of Design and Estimate Documentation</li>
                     </ul>
                 </div>
@@ -164,13 +175,14 @@
                     <h3 class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-6">Office Address</h3>
                     <p class="text-lg leading-relaxed">
                         050060, Republic of Kazakhstan,<br> 
-                        Almaty, Rozybakiev Str., 283A/6
+                        Almaty, Rozybakiev str.,<br> 
+                        building 283A/6
                     </p>
                 </div>
                 <div>
                     <h3 class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-6">Contact</h3>
-                    <p class="text-lg mb-2">
-                        <a href="mailto:asylbekov@nrg-prime.com" class="hover:text-blue-400 transition underline underline-offset-8">asylbekov@nrg-prime.com</a>
+                    <p class="text-lg mb-2 underline decoration-gray-700 underline-offset-8">
+                        <a href="mailto:asylbekov@nrg-prime.com" class="hover:text-blue-400 transition">asylbekov@nrg-prime.com</a>
                     </p>
                     <p class="text-2xl font-bold mt-4">
                         <a href="tel:+77012102090" class="hover:text-blue-400 transition">+7 701 210 20 90</a>
@@ -181,7 +193,7 @@
                     <p class="text-gray-500 text-sm leading-relaxed mb-6">
                         Supplier of innovative technologies for the industrial future of Kazakhstan.
                     </p>
-                    <p class="text-gray-600 text-[10px] uppercase tracking-tighter">© 2024-2026 NRG Prime LLP. All rights reserved.</p>
+                    <p class="text-gray-600 text-[10px] uppercase tracking-tighter">© 2024-2026 NRG Prime LLC. All rights reserved.</p>
                 </div>
             </div>
         </div>
