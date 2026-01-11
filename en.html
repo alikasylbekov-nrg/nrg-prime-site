@@ -21,7 +21,6 @@
                 <div class="flex items-center">
                     <img src="assets/logo.png" alt="NRG Prime Logo" class="h-28 md:h-32 w-auto py-2 object-contain">
                 </div>
-                
                 <div class="flex items-center space-x-8">
                     <div class="hidden md:flex space-x-8 text-xs font-bold uppercase tracking-widest text-gray-600">
                         <a href="#about" class="hover:text-blue-600 transition">About Us</a>
@@ -29,7 +28,6 @@
                         <a href="#services" class="hover:text-blue-600 transition">Engineering</a>
                         <a href="contacts-en.html" class="hover:text-blue-600 transition">Contacts</a>
                     </div>
-                    
                     <div class="flex items-center space-x-2 border-l pl-8 text-xs font-bold">
                         <a href="index.html" class="text-gray-500 hover:text-blue-600 transition">RU</a>
                         <span class="text-gray-300">|</span>
@@ -86,7 +84,6 @@
                 <h2 class="text-3xl font-bold mb-4 uppercase tracking-widest text-gray-900">Our Suppliers</h2>
                 <div class="h-1 w-20 bg-blue-600 mx-auto"></div>
             </div>
-            
             <div class="grid lg:grid-cols-3 md:grid-cols-1 gap-10">
                 <div class="group bg-white p-8 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between hover:shadow-md transition">
                     <div>
@@ -98,7 +95,10 @@
                             Global leader in filtration and wastewater treatment systems. <strong>HPT (20 Bar)</strong> high-pressure technology ensures maximum cake dryness.
                         </p>
                     </div>
-                    <a href="docs/matec-catalog.pdf" class="text-blue-700 text-sm font-bold hover:text-blue-900 border-t pt-4 uppercase tracking-tighter">Download Catalog →</a>
+                    <div class="flex flex-col space-y-2 border-t pt-4">
+                        <a href="docs/matec1.pdf" class="text-blue-700 text-sm font-bold hover:text-blue-900 uppercase tracking-tighter">Equipment Catalog →</a>
+                        <a href="docs/matec2.pdf" class="text-blue-700 text-sm font-bold hover:text-blue-900 uppercase tracking-tighter">Technical Catalog →</a>
+                    </div>
                 </div>
 
                 <div class="group bg-white p-8 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between hover:shadow-md transition">
@@ -106,10 +106,10 @@
                         <img src="assets/alfa.svg" alt="Alfa Pompe Logo" class="h-12 w-auto mb-6 object-contain partner-logo">
                         <h3 class="text-2xl font-bold mb-4 text-gray-900">ALFA Pompe (Italy)</h3>
                         <p class="text-sm text-gray-700 leading-relaxed mb-6">
-                            Specialized pumps for extremely abrasive environments. Hydrodynamic modeling minimizes wear on working components.
+                            Specialized pumps for abrasive environments. Hydrodynamic modeling minimizes wear on working components.
                         </p>
                     </div>
-                    <a href="docs/alfa-catalog.pdf" class="text-blue-700 text-sm font-bold hover:text-blue-900 border-t pt-4 uppercase tracking-tighter">Download Catalog →</a>
+                    <a href="docs/alfa-catalog.pdf" class="text-blue-700 text-sm font-bold hover:text-blue-900 border-t pt-4 uppercase tracking-tighter">ALFA Catalog →</a>
                 </div>
 
                 <div class="group bg-white p-8 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between hover:shadow-md transition">
@@ -117,7 +117,7 @@
                         <img src="assets/ifm.png" alt="IFM Logo" class="h-12 w-auto mb-6 object-contain partner-logo">
                         <h3 class="text-2xl font-bold mb-4 text-gray-900">Italian Fluid Machines</h3>
                         <p class="text-sm text-gray-700 leading-relaxed mb-6">
-                            Innovative pumping and compressor equipment for the petrochemical industry. Manufactured to international API standards.
+                            Innovative pumping and compressor equipment for the petrochemical industry. API standards compliant.
                         </p>
                     </div>
                     <p class="text-gray-400 text-xs italic border-t pt-4">Technical information upon request</p>
@@ -153,24 +153,16 @@
     </section>
 
     <footer class="bg-gray-900 text-white py-20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-3 gap-16 text-center md:text-left">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left">
+            <div class="grid md:grid-cols-3 gap-16">
                 <div>
-                    <h3 class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-6">Office Address</h3>
-                    <p class="text-lg leading-relaxed">
-                        050060, Republic of Kazakhstan,<br> 
-                        Almaty, Rozybakiev St.,<br> 
-                        Building 283A/6
-                    </p>
+                    <h3 class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-6">Address</h3>
+                    <p class="text-lg leading-relaxed">050060, Almaty, Rozybakiev St., 283A/6</p>
                 </div>
                 <div>
                     <h3 class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-6">Contact</h3>
-                    <p class="text-lg mb-2 underline decoration-gray-700 underline-offset-8">
-                        <a href="mailto:asylbekov@nrg-prime.com">asylbekov@nrg-prime.com</a>
-                    </p>
-                    <p class="text-2xl font-bold mt-4">
-                        <a href="tel:+77012102090">+7 701 210 20 90</a>
-                    </p>
+                    <p class="text-lg underline underline-offset-8">asylbekov@nrg-prime.com</p>
+                    <p class="text-2xl font-bold mt-4">+7 701 210 20 90</p>
                 </div>
                 <div>
                     <h3 class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-6">NRG Prime</h3>
@@ -179,6 +171,5 @@
             </div>
         </div>
     </footer>
-
 </body>
 </html>
