@@ -9,6 +9,9 @@
     <style>
         body { font-family: 'Inter', sans-serif; color: #374151; scroll-behavior: smooth; }
         .accent-border { border-left: 4px solid #57A9B6; }
+        /* Плавность для логотипов */
+        .partner-logo { transition: all 0.4s ease; filter: grayscale(100%); opacity: 0.7; }
+        .group:hover .partner-logo { filter: grayscale(0%); opacity: 1; }
     </style>
 </head>
 <body class="bg-white">
@@ -85,9 +88,10 @@
             </div>
             
             <div class="grid lg:grid-cols-3 md:grid-cols-1 gap-10">
-                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between">
+                <div class="group bg-white p-8 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between hover:shadow-md transition">
                     <div>
-                        <h3 class="text-2xl font-bold mb-6 text-gray-900">MATEC Industries (Италия)</h3>
+                        <img src="assets/matec.svg" alt="Matec Logo" class="h-12 w-auto mb-6 object-contain partner-logo">
+                        <h3 class="text-2xl font-bold mb-4 text-gray-900">MATEC Industries (Италия)</h3>
                         <p class="text-sm text-gray-700 leading-relaxed mb-6">
                             Мировой лидер в производстве комплексных систем фильтрации и очистки сточных вод. Технология высокого давления <strong>HPT (20 Bar)</strong> гарантирует максимальную степень осушения кека.
                         </p>
@@ -100,24 +104,26 @@
                     <a href="docs/matec-catalog.pdf" class="text-blue-700 text-sm font-bold hover:text-blue-900 border-t pt-4 uppercase tracking-tighter">Скачать каталог MATEC →</a>
                 </div>
 
-                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between">
+                <div class="group bg-white p-8 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between hover:shadow-md transition">
                     <div>
-                        <h3 class="text-2xl font-bold mb-6 text-gray-900">ALFA Pompe (Италия)</h3>
+                        <img src="assets/alfa.svg" alt="Alfa Pompe Logo" class="h-12 w-auto mb-6 object-contain partner-logo">
+                        <h3 class="text-2xl font-bold mb-4 text-gray-900">ALFA Pompe (Италия)</h3>
                         <p class="text-sm text-gray-700 leading-relaxed mb-6">
                             Специализированное производство насосов для работы в экстремально абразивных средах. Применение гидродинамического моделирования минимизирует износ рабочих узлов.
                         </p>
                         <ul class="text-xs text-gray-500 space-y-2 mb-8 uppercase tracking-wide font-semibold">
                             <li>• Горизонтальные и вертикальные шламовые насосы</li>
-                            <li>• Погружные насосы с резиновой футеровок</li>
+                            <li>• Погружные насосы с резиновой футеровкой</li>
                             <li>• Насосы для подачи на гидроциклоны</li>
                         </ul>
                     </div>
                     <a href="docs/alfa-catalog.pdf" class="text-blue-700 text-sm font-bold hover:text-blue-900 border-t pt-4 uppercase tracking-tighter">Скачать каталог ALFA POMPE →</a>
                 </div>
 
-                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between">
+                <div class="group bg-white p-8 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between hover:shadow-md transition">
                     <div>
-                        <h3 class="text-2xl font-bold mb-6 text-gray-900">Italian Fluid Machines</h3>
+                        <img src="assets/ifm.png" alt="IFM Logo" class="h-12 w-auto mb-6 object-contain partner-logo">
+                        <h3 class="text-2xl font-bold mb-4 text-gray-900">Italian Fluid Machines</h3>
                         <p class="text-sm text-gray-700 leading-relaxed mb-6">
                             Инновационное насосное и компрессорное оборудование для нефтехимии. Изготовление систем на рамах (skid-mounted) по международным стандартам API.
                         </p>
@@ -127,7 +133,7 @@
                             <li>• Системы утилизации факельных газов</li>
                         </ul>
                     </div>
-                    <p class="text-gray-400 text-xs italic border-t pt-4 italic">Техническая информация по запросу</p>
+                    <p class="text-gray-400 text-xs italic border-t pt-4">Техническая информация по запросу</p>
                 </div>
             </div>
         </div>
@@ -137,22 +143,24 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl font-bold mb-16 uppercase tracking-widest text-center">Инжиниринг и Спецпроекты</h2>
             <div class="grid lg:grid-cols-2 gap-12">
-                <div class="accent-border p-8 bg-slate-50 rounded-r-xl">
+                <div class="group accent-border p-8 bg-slate-50 rounded-r-xl transition hover:bg-slate-100">
+                    <img src="assets/nuvia.png" alt="Nuvia Logo" class="h-10 w-auto mb-6 object-contain partner-logo">
                     <h3 class="text-2xl font-bold mb-4 text-blue-900">NUVIA (Чехия)</h3>
-                    <p class="text-gray-700 mb-6 font-light">Экспертные решения для ядерной энергетики и систем радиационного контроля.</p>
+                    <p class="text-gray-700 mb-6 font-light">Ядерная энергетика и системы радиационного контроля.</p>
                     <ul class="space-y-3 text-sm text-gray-600">
                         <li>• Поставка оборудования и сервис для АЭС</li>
                         <li>• Системы радиационного мониторинга (RMS)</li>
                         <li>• Производство и сервис прецизионных детекторов</li>
                     </ul>
                 </div>
-                <div class="accent-border p-8 bg-slate-50 rounded-r-xl border-blue-800">
+                <div class="group accent-border p-8 bg-slate-50 rounded-r-xl border-blue-800 transition hover:bg-slate-100">
+                    <img src="assets/energowise.png" alt="EnergoWise Logo" class="h-10 w-auto mb-6 object-contain partner-logo">
                     <h3 class="text-2xl font-bold mb-4 text-blue-900">EnergoWise Consulting LLC FZ</h3>
-                    <p class="text-gray-700 mb-6 font-light">Комплексное технологическое проектирование через партнера в ОАЭ.</p>
+                    <p class="text-gray-700 mb-6 font-light">Технологическое проектирование через партнера в ОАЭ.</p>
                     <ul class="space-y-3 text-sm text-gray-600">
-                        <li>• Технологическое проектирование промышленных объектов</li>
+                        <li>• Проектирование промышленных объектов</li>
                         <li>• Экологический консалтинг, аудит и ТЭО</li>
-                        <li>• Разработка проектно-сметной документации (ПСД)</li>
+                        <li>• Разработка проектно-сметной документации</li>
                     </ul>
                 </div>
             </div>
@@ -160,4 +168,35 @@
     </section>
 
     <footer id="contacts" class="bg-gray-900 text-white py-20">
-        <div class="max-w-7xl mx-auto
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-16 text-center md:text-left">
+                <div>
+                    <h3 class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-6">Адрес офиса</h3>
+                    <p class="text-lg leading-relaxed">
+                        050060, Республика Казахстан,<br> 
+                        г. Алматы, ул. Розыбакиева,<br> 
+                        дом 283А/6
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-6">Связь</h3>
+                    <p class="text-lg mb-2 underline decoration-gray-700 underline-offset-8">
+                        <a href="mailto:asylbekov@nrg-prime.com" class="hover:text-blue-400 transition">asylbekov@nrg-prime.com</a>
+                    </p>
+                    <p class="text-2xl font-bold mt-4">
+                        <a href="tel:+77012102090" class="hover:text-blue-400 transition">+7 701 210 20 90</a>
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-6">NRG Prime</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-6">
+                        Поставщик инновационных технологий для индустриального будущего Казахстана.
+                    </p>
+                    <p class="text-gray-600 text-[10px] uppercase tracking-tighter">© 2024-2026 ТОО «NRG Prime». Все права защищены.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
