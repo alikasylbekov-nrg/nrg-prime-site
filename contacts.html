@@ -7,113 +7,69 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        body { font-family: 'Inter', sans-serif; color: #374151; }
     </style>
 </head>
-<body class="bg-white text-gray-800">
+<body class="bg-white">
 
-    <nav class="bg-white border-b border-gray-100 sticky top-0 z-50 shadow-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-4">
-            <a href="index.html">
-                <img src="assets/logo.png" alt="NRG Prime Logo" class="h-28 md:h-32 w-auto py-2 object-contain">
-            </a>
-            <div class="flex items-center space-x-8">
-                <div class="hidden md:flex space-x-8 text-xs font-bold uppercase tracking-widest text-gray-600">
-                    <a href="index.html" class="hover:text-blue-600 transition">Главная</a>
-                    <a href="index.html#partners" class="hover:text-blue-600 transition">Оборудование</a>
-                    <a href="index.html#about" class="hover:text-blue-600 transition">О компании</a>
+    <nav class="sticky top-0 bg-white/95 backdrop-blur-md z-50 border-b border-gray-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <a href="index.html">
+                        <img src="assets/logo.png" alt="NRG Prime Logo" class="h-28 md:h-32 w-auto py-2 object-contain">
+                    </a>
                 </div>
-                <div class="flex items-center space-x-2 border-l pl-8 text-xs font-bold">
-                    <a href="contacts.html" class="text-blue-600 underline">RU</a>
-                    <span class="text-gray-300">|</span>
-                    <a href="contacts-kz.html" class="text-gray-500 hover:text-blue-600 transition">KZ</a>
-                    <span class="text-gray-300">|</span>
-                    <a href="contacts-en.html" class="text-gray-500 hover:text-blue-600 transition">EN</a>
+                <div class="flex items-center space-x-8">
+                    <div class="hidden md:flex space-x-8 text-xs font-bold uppercase tracking-widest text-gray-600">
+                        <a href="index.html#about" class="hover:text-blue-600 transition">О компании</a>
+                        <a href="index.html#partners" class="hover:text-blue-600 transition">Оборудование</a>
+                        <a href="index.html#services" class="hover:text-blue-600 transition">Инжиниринг</a>
+                        <a href="contacts.html" class="text-blue-600">Контакты</a>
+                    </div>
+                    <div class="flex items-center space-x-2 border-l pl-8 text-xs font-bold">
+                        <a href="contacts.html" class="text-blue-600 underline">RU</a>
+                        <span class="text-gray-300">|</span>
+                        <a href="contacts-kz.html" class="text-gray-500 hover:text-blue-600 transition">KZ</a>
+                        <span class="text-gray-300">|</span>
+                        <a href="contacts-en.html" class="text-gray-500 hover:text-blue-600 transition">EN</a>
+                    </div>
                 </div>
             </div>
         </div>
     </nav>
 
-    <section class="py-20 bg-slate-50 border-b border-gray-100">
-        <div class="max-w-7xl mx-auto px-4 text-center">
-            <h1 class="text-4xl font-extrabold text-gray-900 uppercase tracking-tight">Контакты</h1>
-            <div class="h-1 w-20 bg-blue-600 mx-auto mt-6"></div>
-            <p class="mt-6 text-xl text-gray-600 font-light italic">Свяжитесь с нами для получения технической консультации или посетите наш офис</p>
-        </div>
-    </section>
-
     <section class="py-24">
-        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-16 items-start">
-            
-            <div class="space-y-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-start">
                 <div>
-                    <h3 class="text-sm font-bold text-blue-600 uppercase tracking-widest mb-6">Наш офис в Алматы</h3>
-                    <p class="text-3xl font-light leading-snug text-gray-900">
-                        050060, Республика Казахстан,<br>
-                        г. Алматы, Бостандыкский район,<br>
-                        ул. Розыбакиева, дом 283А/6
+                    <h1 class="text-sm font-bold text-blue-600 uppercase tracking-[0.3em] mb-6">Наш офис в Алматы</h1>
+                    <p class="text-4xl font-bold text-gray-900 mb-10 leading-tight">
+                        050060, Республика Казахстан,<br> 
+                        г. Алматы, ул. Розыбакиева, 283А/6
                     </p>
-                </div>
-
-                <div class="grid sm:grid-cols-2 gap-10">
-                    <div>
-                        <h3 class="text-sm font-bold text-gray-400 uppercase tracking-widest mb-4">Телефон</h3>
-                        <p class="text-xl font-bold hover:text-blue-600 transition">
-                            <a href="tel:+77012102090">+7 701 210 20 90</a>
-                        </p>
-                    </div>
-                    <div>
-                        <h3 class="text-sm font-bold text-gray-400 uppercase tracking-widest mb-4">Email</h3>
-                        <p class="text-xl underline decoration-blue-200 underline-offset-8 hover:text-blue-600 transition">
-                            <a href="mailto:asylbekov@nrg-prime.com">asylbekov@nrg-prime.com</a>
-                        </p>
+                    <div class="grid sm:grid-cols-2 gap-12 border-t border-gray-100 pt-12">
+                        <div>
+                            <h3 class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-4">Телефон</h3>
+                            <a href="tel:+77012102090" class="text-xl font-bold hover:text-blue-600">+7 701 210 20 90</a>
+                        </div>
+                        <div>
+                            <h3 class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-4">Электронная почта</h3>
+                            <a href="mailto:asylbekov@nrg-prime.com" class="text-xl font-bold hover:text-blue-600 underline decoration-gray-200 underline-offset-8">asylbekov@nrg-prime.com</a>
+                        </div>
                     </div>
                 </div>
-
-                <div class="pt-10 border-t border-gray-100 grid sm:grid-cols-2 gap-10">
-                    <div>
-                        <h3 class="text-sm font-bold text-gray-400 uppercase tracking-widest mb-4">Режим работы</h3>
-                        <p class="text-gray-700">Понедельник — Пятница</p>
-                        <p class="text-gray-900 font-bold">09:00 – 18:00</p>
-                    </div>
-                    <div>
-                        <h3 class="text-sm font-bold text-gray-400 uppercase tracking-widest mb-4">Выходные</h3>
-                        <p class="text-gray-700">Суббота, Воскресенье</p>
-                    </div>
+                <div class="bg-slate-100 rounded-3xl h-[450px] overflow-hidden shadow-inner flex items-center justify-center">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2908.1328475451!2d76.8906!3d43.20!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDPCsDEyJzAwLjAiTiA3NsKwNTMnMjYuMiJF!5e0!3m2!1sru!2skz!4v1700000000000" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
-
-            <div class="space-y-6">
-                <div class="h-[450px] w-full rounded-3xl overflow-hidden shadow-2xl border border-gray-200 relative">
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2908.4357410056973!2d76.8845!3d43.2001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38836ebcf93e8e21%3A0xc6a8163f46f46a7c!2z0YPQu9C40YbQsCDQoNC-0LfRi9Cx0LDQutC40LXQstCwIDI4M0EsINCQ0LvQvNCw0YLRiyAwNTAwNjAsINCa0LDQt9Cw0YXRgdGC0LDQvQ!5e0!3m2!1sru!2skz!4v1710000000000!5m2!1sru!2skz" 
-                        width="100%" 
-                        height="100%" 
-                        style="border:0;" 
-                        allowfullscreen="" 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div>
-                <div class="flex justify-center">
-                    <a href="https://maps.app.goo.gl/3QW6ZqSrtnC8f15G8" target="_blank" class="inline-flex items-center px-6 py-3 bg-white border border-gray-300 rounded-full text-xs font-bold uppercase tracking-widest text-gray-700 hover:bg-gray-50 hover:shadow-md transition">
-                        <svg class="w-4 h-4 mr-2 text-red-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg>
-                        Открыть в Google Картах
-                    </a>
-                </div>
-            </div>
-
         </div>
     </section>
 
-    <footer class="bg-gray-900 text-white py-16">
+    <footer class="bg-gray-900 text-white py-12">
         <div class="max-w-7xl mx-auto px-4 text-center">
-            <div class="mb-8">
-                <img src="assets/logo.png" alt="NRG Prime" class="h-12 w-auto mx-auto brightness-200 grayscale">
-            </div>
-            <p class="text-[10px] uppercase tracking-widest text-gray-500">© 2024-2026 ТОО «NRG Prime». Все права защищены.</p>
+            <p class="text-gray-500 text-[10px] uppercase tracking-widest">© 2024-2026 ТОО «NRG Prime». Все права защищены.</p>
         </div>
     </footer>
-
 </body>
 </html>
