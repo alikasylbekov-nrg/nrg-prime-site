@@ -15,8 +15,9 @@
                 <img src="assets/logo.png" alt="NRG Prime" class="h-16 w-auto object-contain">
             </a>
             <div class="space-x-8 text-xs font-bold uppercase tracking-widest">
-                <a href="index.html" class="hover:text-blue-600">Главная</a>
-                <a href="index.html#partners" class="hover:text-blue-600">Оборудование</a>
+                <a href="index.html" class="hover:text-blue-600 transition">Главная</a>
+                <a href="index.html#partners" class="hover:text-blue-600 transition">Оборудование</a>
+                <a href="index.html#about" class="hover:text-blue-600 transition">О компании</a>
             </div>
         </div>
     </nav>
@@ -29,7 +30,7 @@
     </section>
 
     <section class="py-20">
-        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-16">
+        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-16 items-start">
             
             <div class="space-y-12">
                 <div>
@@ -59,16 +60,27 @@
                 </div>
             </div>
 
-            <div class="h-96 md:h-full bg-slate-100 rounded-2xl overflow-hidden shadow-inner border relative">
-                <div class="absolute inset-0 flex items-center justify-center text-center p-8">
-                    <p class="text-gray-400 text-sm">Здесь может быть интерактивная карта<br>Алматы, ул. Розыбакиева 283А/6</p>
+            <div class="space-y-4">
+                <div class="h-96 w-full rounded-2xl overflow-hidden shadow-lg border border-gray-200">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2908.2323871927375!2d76.88647047663242!3d43.20459528131378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x388369300537449b%3A0x64426510403378d3!2z0YPQu9C40YbQsCDQoNC-0LfRi9Cx0LDQutC40LXQstCwIDI4M0EsINCQ0LvQvNCw0YLRiyAwNTAwNjAsINCa0LDQt9Cw0YXRgdGC0LDQvA!5e0!3m2!1sru!2s!4v1715850000000!5m2!1sru!2s" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
                 </div>
+                <a href="https://maps.app.goo.gl/9yGv4yGv4yGv" target="_blank" class="block text-center text-xs font-bold text-gray-400 uppercase tracking-widest hover:text-blue-600 transition">
+                    Открыть в Google Картах ↗
+                </a>
             </div>
 
         </div>
     </section>
 
-    <footer class="bg-gray-900 text-white py-12">
+    <footer class="bg-gray-900 text-white py-12 mt-12">
         <div class="max-w-7xl mx-auto px-4 text-center">
             <p class="text-[10px] uppercase tracking-widest text-gray-500">© 2024-2026 ТОО «NRG Prime»</p>
         </div>
