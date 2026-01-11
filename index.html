@@ -9,7 +9,6 @@
     <style>
         body { font-family: 'Inter', sans-serif; color: #374151; scroll-behavior: smooth; }
         .accent-border { border-left: 4px solid #57A9B6; }
-        /* Логотипы теперь всегда цветные, при наведении немного увеличиваются */
         .partner-logo { transition: all 0.3s ease; filter: none; opacity: 1; }
         .group:hover .partner-logo { transform: scale(1.05); }
     </style>
@@ -27,7 +26,8 @@
                     <div class="hidden md:flex space-x-8 text-xs font-bold uppercase tracking-widest text-gray-600">
                         <a href="#about" class="hover:text-blue-600 transition">О компании</a>
                         <a href="#partners" class="hover:text-blue-600 transition">Оборудование</a>
-                        <a href="#services" class="hover:text-blue-600 transition">Услуги</a>
+                        <a href="#services" class="hover:text-blue-600 transition">Инжиниринг</a>
+                        <a href="contacts.html" class="hover:text-blue-600 transition">Контакты</a>
                     </div>
                     
                     <div class="flex items-center space-x-2 border-l pl-8 text-xs font-bold">
@@ -51,7 +51,7 @@
             </p>
             <div class="flex flex-col md:flex-row gap-4 justify-center md:justify-start">
                 <a href="#partners" class="bg-gray-900 text-white px-10 py-4 rounded-md font-bold hover:bg-gray-800 transition shadow-lg text-sm uppercase">Каталог оборудования</a>
-                <a href="#contacts" class="bg-white text-gray-900 border border-gray-300 px-10 py-4 rounded-md font-bold hover:bg-gray-50 transition text-sm uppercase">Связаться с нами</a>
+                <a href="contacts.html" class="bg-white text-gray-900 border border-gray-300 px-10 py-4 rounded-md font-bold hover:bg-gray-50 transition text-sm uppercase">Наши контакты</a>
             </div>
         </div>
     </header>
@@ -62,7 +62,7 @@
                 <div>
                     <h2 class="text-3xl font-bold mb-8 text-gray-900 uppercase tracking-tight">От опыта к инновациям</h2>
                     <p class="text-gray-600 mb-6 leading-relaxed text-lg font-light">
-                        Ранее известные как <strong>ТОО «Новые Горные Разработки» (NGR)</strong>, мы провели масштабную трансформацию бренда в <strong>NRG Prime</strong>. Это решение было продиктовано выходом компании на новый международный уровень.
+                        Ранее известная как <strong>ТОО «Новые Горные Разработки» (NGR)</strong>, наша компания трансформировалась в бренд <strong>NRG Prime</strong> в связи с выходом на международный уровень.
                     </p>
                     <p class="text-gray-600 mb-8 leading-relaxed italic">
                         Сегодня мы являемся официальным связующим звеном между ведущими европейскими заводами и предприятиями Казахстана.
@@ -97,13 +97,8 @@
                         <p class="text-sm text-gray-700 leading-relaxed mb-6">
                             Мировой лидер в производстве комплексных систем фильтрации и очистки сточных вод. Технология высокого давления <strong>HPT (20 Bar)</strong> гарантирует максимальную степень осушения кека.
                         </p>
-                        <ul class="text-xs text-gray-500 space-y-2 mb-8 uppercase tracking-wide font-semibold">
-                            <li>• Промышленные фильтр-прессы (Terrae, Magnum)</li>
-                            <li>• Станции приготовления флокулянта Bifloc</li>
-                            <li>• Установки очистки песка Aggretec</li>
-                        </ul>
                     </div>
-                    <a href="docs/matec-catalog.pdf" class="text-blue-700 text-sm font-bold hover:text-blue-900 border-t pt-4 uppercase tracking-tighter">Скачать каталог MATEC →</a>
+                    <a href="docs/matec-catalog.pdf" class="text-blue-700 text-sm font-bold hover:text-blue-900 border-t pt-4 uppercase tracking-tighter">Каталог MATEC →</a>
                 </div>
 
                 <div class="group bg-white p-8 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between hover:shadow-md transition">
@@ -113,13 +108,8 @@
                         <p class="text-sm text-gray-700 leading-relaxed mb-6">
                             Специализированное производство насосов для работы в экстремально абразивных средах. Применение гидродинамического моделирования минимизирует износ рабочих узлов.
                         </p>
-                        <ul class="text-xs text-gray-500 space-y-2 mb-8 uppercase tracking-wide font-semibold">
-                            <li>• Горизонтальные и вертикальные шламовые насосы</li>
-                            <li>• Погружные насосы с резиновой футеровкой</li>
-                            <li>• Насосы для подачи на гидроциклоны</li>
-                        </ul>
                     </div>
-                    <a href="docs/alfa-catalog.pdf" class="text-blue-700 text-sm font-bold hover:text-blue-900 border-t pt-4 uppercase tracking-tighter">Скачать каталог ALFA POMPE →</a>
+                    <a href="docs/alfa-catalog.pdf" class="text-blue-700 text-sm font-bold hover:text-blue-900 border-t pt-4 uppercase tracking-tighter">Каталог ALFA →</a>
                 </div>
 
                 <div class="group bg-white p-8 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between hover:shadow-md transition">
@@ -127,15 +117,10 @@
                         <img src="assets/ifm.png" alt="IFM Logo" class="h-12 w-auto mb-6 object-contain partner-logo">
                         <h3 class="text-2xl font-bold mb-4 text-gray-900">Italian Fluid Machines</h3>
                         <p class="text-sm text-gray-700 leading-relaxed mb-6">
-                            Инновационное насосное и компрессорное оборудование для нефтехимии. Изготовление систем на рамах (skid-mounted) по международным стандартам API.
+                            Инновационное насосное и компрессорное оборудование для нефтехимии. Изготовление систем на рамах по международным стандартам API.
                         </p>
-                        <ul class="text-xs text-gray-500 space-y-2 mb-8 uppercase tracking-wide font-semibold">
-                            <li>• Жидкостно-кольцевые компрессоры</li>
-                            <li>• Вакуумные системы высокого давления</li>
-                            <li>• Системы утилизации факельных газов</li>
-                        </ul>
                     </div>
-                    <p class="text-gray-400 text-xs italic border-t pt-4 italic">Техническая информация по запросу</p>
+                    <p class="text-gray-400 text-xs italic border-t pt-4">Техническая информация по запросу</p>
                 </div>
             </div>
         </div>
@@ -143,16 +128,15 @@
 
     <section id="services" class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold mb-16 uppercase tracking-widest text-center">Инжиниринг и Спецпроекты</h2>
+            <h2 class="text-3xl font-bold mb-16 uppercase tracking-widest text-center">Инжиниринг и Арнайы жобалар</h2>
             <div class="grid lg:grid-cols-2 gap-12">
                 <div class="group accent-border p-8 bg-slate-50 rounded-r-xl transition hover:bg-slate-100">
                     <img src="assets/nuvia.png" alt="Nuvia Logo" class="h-10 w-auto mb-6 object-contain partner-logo">
                     <h3 class="text-2xl font-bold mb-4 text-blue-900">NUVIA (Чехия)</h3>
                     <p class="text-gray-700 mb-6 font-light">Экспертные решения для ядерной энергетики и систем радиационного контроля.</p>
                     <ul class="space-y-3 text-sm text-gray-600">
-                        <li>• Поставка оборудования и сервис для АЭС</li>
+                        <li>• Поставка и сервис оборудования для АЭС</li>
                         <li>• Системы радиационного мониторинга (RMS)</li>
-                        <li>• Производство и сервис прецизионных детекторов</li>
                     </ul>
                 </div>
                 <div class="group accent-border p-8 bg-slate-50 rounded-r-xl border-blue-800 transition hover:bg-slate-100">
@@ -162,14 +146,13 @@
                     <ul class="space-y-3 text-sm text-gray-600">
                         <li>• Технологическое проектирование промышленных объектов</li>
                         <li>• Экологический консалтинг, аудит и ТЭО</li>
-                        <li>• Разработка проектно-сметной документации (ПСД)</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer id="contacts" class="bg-gray-900 text-white py-20">
+    <footer class="bg-gray-900 text-white py-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-3 gap-16 text-center md:text-left">
                 <div>
@@ -181,7 +164,7 @@
                     </p>
                 </div>
                 <div>
-                    <h3 class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-6">Связь</h3>
+                    <h3 class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-6">Контакты</h3>
                     <p class="text-lg mb-2 underline decoration-gray-700 underline-offset-8">
                         <a href="mailto:asylbekov@nrg-prime.com" class="hover:text-blue-400 transition">asylbekov@nrg-prime.com</a>
                     </p>
@@ -191,9 +174,6 @@
                 </div>
                 <div>
                     <h3 class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-6">NRG Prime</h3>
-                    <p class="text-gray-500 text-sm leading-relaxed mb-6">
-                        Поставщик инновационных технологий для индустриального будущего Казахстана.
-                    </p>
                     <p class="text-gray-600 text-[10px] uppercase tracking-tighter">© 2024-2026 ТОО «NRG Prime». Все права защищены.</p>
                 </div>
             </div>
