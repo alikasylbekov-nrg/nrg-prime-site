@@ -1,188 +1,134 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head> <link rel="icon" type="image/x-icon" href="favicon.ico">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NRG Prime | Промышленное оборудование из Европы</title>
+    <title>NRG Prime | Промышленное оборудование</title>
+    
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="apple-touch-icon.png">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; color: #374151; scroll-behavior: smooth; }
-        .accent-border { border-left: 4px solid #57A9B6; }
-        .partner-logo { transition: all 0.3s ease; filter: none; opacity: 1; }
-        .group:hover .partner-logo { transform: scale(1.05); }
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
     </style>
 </head>
-<body class="bg-white">
+<body class="bg-white text-gray-800">
 
-    <nav class="sticky top-0 bg-white/95 backdrop-blur-md z-50 border-b border-gray-100 shadow-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center py-4">
-                <div class="flex items-center">
-                    <img src="assets/logo.png" alt="NRG Prime Logo" class="h-28 md:h-32 w-auto py-2 object-contain">
+    <nav class="bg-white border-b border-gray-100 sticky top-0 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-4">
+            <a href="index.html">
+                <img src="assets/logo.png" alt="NRG Prime" class="h-28 md:h-32 w-auto py-2 object-contain">
+            </a>
+            <div class="flex items-center space-x-8">
+                <div class="hidden md:flex space-x-8 text-xs font-bold uppercase tracking-widest text-gray-600">
+                    <a href="#about" class="hover:text-blue-600 transition">О компании</a>
+                    <a href="#partners" class="hover:text-blue-600 transition">Оборудование</a>
+                    <a href="contacts.html" class="hover:text-blue-600 transition">Контакты</a>
                 </div>
-                
-                <div class="flex items-center space-x-8">
-                    <div class="hidden md:flex space-x-8 text-xs font-bold uppercase tracking-widest text-gray-600">
-                        <a href="#about" class="hover:text-blue-600 transition">О компании</a>
-                        <a href="#partners" class="hover:text-blue-600 transition">Оборудование</a>
-                        <a href="#services" class="hover:text-blue-600 transition">Инжиниринг</a>
-                        <a href="contacts.html" class="hover:text-blue-600 transition">Контакты</a>
-                    </div>
-                    
-                    <div class="flex items-center space-x-2 border-l pl-8 text-xs font-bold">
-                        <a href="index.html" class="text-blue-600 underline">RU</a>
-                        <span class="text-gray-300">|</span>
-                        <a href="kz.html" class="text-gray-500 hover:text-blue-600 transition">KZ</a>
-                        <span class="text-gray-300">|</span>
-                        <a href="en.html" class="text-gray-500 hover:text-blue-600 transition">EN</a>
-                    </div>
+                <div class="flex items-center space-x-2 border-l pl-8 text-xs font-bold">
+                    <a href="index.html" class="text-blue-600 underline">RU</a>
+                    <span class="text-gray-300">|</span>
+                    <a href="kz.html" class="text-gray-500 hover:text-blue-600 transition">KZ</a>
+                    <span class="text-gray-300">|</span>
+                    <a href="en.html" class="text-gray-500 hover:text-blue-600 transition">EN</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <header class="relative py-24 bg-slate-50 overflow-hidden border-b border-gray-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center md:text-left">
-            <h1 class="text-5xl font-extrabold text-gray-900 mb-6 tracking-tight">NRG Prime</h1>
-            <p class="text-xl text-gray-600 max-w-3xl leading-relaxed mb-10">
-                Прямые поставки высокотехнологичного промышленного оборудования из Италии и стран Европы. 
-                Инжиниринговые решения полного цикла для горнодобывающей и энергетической отраслей Казахстана.
+    <section class="relative h-[80vh] flex items-center overflow-hidden bg-slate-900">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80" class="w-full h-full object-cover opacity-40">
+        </div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 w-full text-left">
+            <h1 class="text-5xl md:text-7xl font-extrabold text-white leading-tight uppercase tracking-tighter">
+                Энергия <br><span class="text-blue-500">вашего роста</span>
+            </h1>
+            <p class="mt-8 text-xl text-gray-300 font-light leading-relaxed max-w-xl">
+                Поставка высокотехнологичного промышленного оборудования от ведущих европейских производителей.
             </p>
-            <div class="flex flex-col md:flex-row gap-4 justify-center md:justify-start">
-                <a href="#partners" class="bg-gray-900 text-white px-10 py-4 rounded-md font-bold hover:bg-gray-800 transition shadow-lg text-sm uppercase">Каталог оборудования</a>
-                <a href="contacts.html" class="bg-white text-gray-900 border border-gray-300 px-10 py-4 rounded-md font-bold hover:bg-gray-50 transition text-sm uppercase">Наши контакты</a>
+            <div class="mt-12">
+                <a href="#partners" class="inline-block bg-blue-600 text-white px-10 py-5 text-sm font-bold uppercase tracking-widest hover:bg-blue-700 transition shadow-2xl">
+                    Смотреть оборудование
+                </a>
             </div>
         </div>
-    </header>
+    </section>
 
-    <section id="about" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-2 gap-16 items-center">
-                <div>
-                    <h2 class="text-3xl font-bold mb-8 text-gray-900 uppercase tracking-tight">От опыта к инновациям</h2>
-                    <p class="text-gray-600 mb-6 leading-relaxed text-lg font-light">
-                        Ранее известная как <strong>ТОО «Новые Горные Разработки» (NGR)</strong>, наша компания трансформировалась в бренд <strong>NRG Prime</strong> в связи с выходом на международный уровень.
-                    </p>
-                    <p class="text-gray-600 mb-8 leading-relaxed italic">
-                        Сегодня мы являемся официальным связующим звеном между ведущими европейскими заводами и предприятиями Казахстана.
-                    </p>
+    <section id="partners" class="py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-24">
+                <h2 class="text-sm font-bold text-blue-600 uppercase tracking-[0.3em] mb-4">Наши партнеры</h2>
+                <p class="text-4xl font-light text-gray-900 uppercase">Мировые лидеры индустрии</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="group p-10 bg-slate-50 border border-gray-100 hover:border-blue-200 transition-all duration-500">
+                    <div class="h-16 mb-10 flex items-center">
+                        <img src="assets/matec-logo.png" alt="Matec" class="h-10 object-contain grayscale group-hover:grayscale-0 transition">
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">MATEC Industries (Италия)</h3>
+                    <p class="text-gray-600 font-light leading-relaxed mb-8">Мировой лидер в производстве систем фильтрации и очистки сточных вод.</p>
+                    <div class="space-y-4 pt-6 border-t border-gray-200">
+                        <a href="docs/matec1.pdf" target="_blank" class="block text-xs font-bold uppercase tracking-widest text-blue-600 hover:text-blue-800 transition">→ Каталог оборудования</a>
+                        <a href="docs/matec2.pdf" target="_blank" class="block text-xs font-bold uppercase tracking-widest text-blue-600 hover:text-blue-800 transition">→ Технический каталог</a>
+                    </div>
                 </div>
-                <div class="bg-slate-50 p-10 rounded-2xl border border-gray-200 shadow-inner">
-                    <h3 class="font-bold text-sm uppercase tracking-widest text-blue-800 mb-6">Наши преимущества:</h3>
-                    <ul class="space-y-4 text-gray-700">
-                        <li class="flex items-start"><span class="text-blue-500 mr-3">✓</span> Прямые контракты с заводами Италии и Чехии</li>
-                        <li class="flex items-start"><span class="text-blue-500 mr-3">✓</span> Собственный отдел логистики и таможенного оформления</li>
-                        <li class="flex items-start"><span class="text-blue-500 mr-3">✓</span> Глубокая экспертиза в промышленном проектировании</li>
-                    </ul>
+
+                <div class="group p-10 bg-slate-50 border border-gray-100 hover:border-blue-200 transition-all duration-500">
+                    <div class="h-16 mb-10 flex items-center">
+                        <img src="assets/alfa-logo.png" alt="Alfa Pompe" class="h-10 object-contain grayscale group-hover:grayscale-0 transition">
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">ALFA Pompe (Италия)</h3>
+                    <p class="text-gray-600 font-light leading-relaxed mb-8">Специализированные насосы для работы в экстремально абразивных средах.</p>
+                    <div class="space-y-4 pt-6 border-t border-gray-200">
+                        <a href="docs/alfa-catalog.pdf" target="_blank" class="block text-xs font-bold uppercase tracking-widest text-blue-600 hover:text-blue-800 transition">→ Каталог ALFA</a>
+                    </div>
+                </div>
+
+                <div class="group p-10 bg-slate-50 border border-gray-100 hover:border-blue-200 transition-all duration-500">
+                    <div class="h-16 mb-10 flex items-center">
+                        <img src="assets/ifm-logo.png" alt="IFM" class="h-10 object-contain grayscale group-hover:grayscale-0 transition">
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Italian Fluid Machines</h3>
+                    <p class="text-gray-600 font-light leading-relaxed mb-8">Инновационное насосное и компрессорное оборудование стандарта API.</p>
+                    <p class="text-[10px] uppercase text-gray-400 mt-8 tracking-widest italic">Техническая информация по запросу</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="partners" class="py-24 bg-slate-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold mb-4 uppercase tracking-widest text-gray-900">Наши поставщики</h2>
-                <div class="h-1 w-20 bg-blue-600 mx-auto"></div>
+    <section id="about" class="py-32 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-20 items-center">
+            <div>
+                <h2 class="text-sm font-bold text-blue-500 uppercase tracking-[0.3em] mb-8">О компании</h2>
+                <p class="text-4xl font-light leading-tight mb-10">NRG Prime — надежный партнер в реализации инженерных решений.</p>
+                <div class="space-y-6 text-lg text-gray-400 font-light leading-relaxed">
+                    <p>Мы специализируемся на поставке оборудования для нефтегазового и горно-обогатительного секторов Казахстана.</p>
+                    <p>Прямые партнерские отношения с заводами Европы позволяют нам предлагать лучшие решения.</p>
+                </div>
             </div>
-            
-            <div class="grid lg:grid-cols-3 md:grid-cols-1 gap-10">
-                <div class="group bg-white p-8 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between hover:shadow-md transition">
-                    <div>
-                        <div class="bg-slate-900 inline-block p-2 rounded mb-6">
-                            <img src="assets/matec.png" alt="Matec Logo" class="h-10 w-auto object-contain partner-logo">
-                        </div>
-                        <h3 class="text-2xl font-bold mb-4 text-gray-900">MATEC Industries (Италия)</h3>
-                        <p class="text-sm text-gray-700 leading-relaxed mb-6">
-                            Мировой лидер в производстве комплексных систем фильтрации и очистки сточных вод. Технология высокого давления <strong>HPT (20 Bar)</strong> гарантирует максимальную степень осушения кека.
-                        </p>
-                    </div>
-                    <div class="flex flex-col space-y-2 border-t pt-4">
-                        <a href="docs/matec1.pdf" class="text-blue-700 text-sm font-bold hover:text-blue-900 uppercase tracking-tighter">Каталог оборудования →</a>
-                        <a href="docs/matec2.pdf" class="text-blue-700 text-sm font-bold hover:text-blue-900 uppercase tracking-tighter">Технический каталог →</a>
-                    </div>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-slate-800 p-12 text-center">
+                    <div class="text-5xl font-bold text-blue-500 mb-2">100%</div>
+                    <div class="text-xs uppercase tracking-widest text-gray-500">Качество</div>
                 </div>
-
-                <div class="group bg-white p-8 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between hover:shadow-md transition">
-                    <div>
-                        <img src="assets/alfa.svg" alt="Alfa Pompe Logo" class="h-12 w-auto mb-6 object-contain partner-logo">
-                        <h3 class="text-2xl font-bold mb-4 text-gray-900">ALFA Pompe (Италия)</h3>
-                        <p class="text-sm text-gray-700 leading-relaxed mb-6">
-                            Специализированное производство насосов для работы в экстремально абразивных средах. Применение гидродинамического моделирования минимизирует износ рабочих узлов.
-                        </p>
-                    </div>
-                    <a href="docs/alfa-catalog.pdf" class="text-blue-700 text-sm font-bold hover:text-blue-900 border-t pt-4 uppercase tracking-tighter">Каталог ALFA →</a>
-                </div>
-
-                <div class="group bg-white p-8 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between hover:shadow-md transition">
-                    <div>
-                        <img src="assets/ifm.png" alt="IFM Logo" class="h-12 w-auto mb-6 object-contain partner-logo">
-                        <h3 class="text-2xl font-bold mb-4 text-gray-900">Italian Fluid Machines</h3>
-                        <p class="text-sm text-gray-700 leading-relaxed mb-6">
-                            Инновационное насосное и компрессорное оборудование для нефтехимии. Изготовление систем на рамах по международным стандартам API.
-                        </p>
-                    </div>
-                    <p class="text-gray-400 text-xs italic border-t pt-4">Техническая информация по запросу</p>
+                <div class="bg-slate-800 p-12 text-center mt-12">
+                    <div class="text-5xl font-bold text-blue-500 mb-2">Direct</div>
+                    <div class="text-xs uppercase tracking-widest text-gray-500">Поставки</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="services" class="py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold mb-16 uppercase tracking-widest text-center">Инжиниринг и Арнайы жобалар</h2>
-            <div class="grid lg:grid-cols-2 gap-12">
-                <div class="group accent-border p-8 bg-slate-50 rounded-r-xl transition hover:bg-slate-100">
-                    <img src="assets/nuvia.png" alt="Nuvia Logo" class="h-10 w-auto mb-6 object-contain partner-logo">
-                    <h3 class="text-2xl font-bold mb-4 text-blue-900">NUVIA (Чехия)</h3>
-                    <p class="text-gray-700 mb-6 font-light">Экспертные решения для ядерной энергетики и систем радиационного контроля.</p>
-                    <ul class="space-y-3 text-sm text-gray-600">
-                        <li>• Поставка и сервис оборудования для АЭС</li>
-                        <li>• Системы радиационного мониторинга (RMS)</li>
-                    </ul>
-                </div>
-                <div class="group accent-border p-8 bg-slate-50 rounded-r-xl border-blue-800 transition hover:bg-slate-100">
-                    <img src="assets/energowise.png" alt="EnergoWise Logo" class="h-10 w-auto mb-6 object-contain partner-logo">
-                    <h3 class="text-2xl font-bold mb-4 text-blue-900">EnergoWise Consulting LLC FZ</h3>
-                    <p class="text-gray-700 mb-6 font-light">Комплексное технологическое проектирование через партнера в ОАЭ.</p>
-                    <ul class="space-y-3 text-sm text-gray-600">
-                        <li>• Технологическое проектирование промышленных объектов</li>
-                        <li>• Экологический консалтинг, аудит и ТЭО</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="bg-gray-900 text-white py-20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-3 gap-16 text-center md:text-left">
-                <div>
-                    <h3 class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-6">Адрес офиса</h3>
-                    <p class="text-lg leading-relaxed">
-                        050060, Республика Казахстан,<br> 
-                        г. Алматы, ул. Розыбакиева,<br> 
-                        дом 283А/6
-                    </p>
-                </div>
-                <div>
-                    <h3 class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-6">Контакты</h3>
-                    <p class="text-lg mb-2 underline decoration-gray-700 underline-offset-8">
-                        <a href="mailto:asylbekov@nrg-prime.com" class="hover:text-blue-400 transition">asylbekov@nrg-prime.com</a>
-                    </p>
-                    <p class="text-2xl font-bold mt-4">
-                        <a href="tel:+77012102090" class="hover:text-blue-400 transition">+7 701 210 20 90</a>
-                    </p>
-                </div>
-                <div>
-                    <h3 class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-6">NRG Prime</h3>
-                    <p class="text-gray-600 text-[10px] uppercase tracking-tighter">© 2024-2026 ТОО «NRG Prime». Все права защищены.</p>
-                </div>
-            </div>
+    <footer class="bg-white py-16 border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <img src="assets/logo.png" alt="NRG Prime" class="h-16 w-auto mx-auto mb-10 grayscale opacity-50">
+            <p class="text-[10px] text-gray-400 uppercase tracking-[0.2em]">© 2024-2026 ТОО «NRG Prime». Все права защищены.</p>
         </div>
     </footer>
 
 </body>
 </html>
-
