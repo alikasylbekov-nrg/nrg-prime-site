@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
-        .hero-gradient { background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)); }
+        .hero-overlay { background: rgba(0, 0, 0, 0.5); }
     </style>
 </head>
 <body class="bg-white text-gray-800">
@@ -26,7 +26,7 @@
                 <div class="hidden md:flex space-x-8 text-xs font-bold uppercase tracking-widest text-gray-600">
                     <a href="#about" class="hover:text-blue-600 transition">О компании</a>
                     <a href="#partners" class="hover:text-blue-600 transition">Оборудование</a>
-                    <a href="#services" class="hover:text-blue-600 transition">Инжиниринг</a>
+                    <a href="#services" class="hover:text-blue-600 transition">Услуги</a>
                     <a href="contacts.html" class="hover:text-blue-600 transition">Контакты</a>
                 </div>
                 <div class="flex items-center space-x-2 border-l pl-8 text-xs font-bold">
@@ -43,17 +43,17 @@
     <section class="relative h-[85vh] flex items-center overflow-hidden">
         <div class="absolute inset-0 z-0">
             <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80" class="w-full h-full object-cover">
-            <div class="absolute inset-0 hero-gradient"></div>
+            <div class="absolute inset-0 hero-overlay"></div>
         </div>
         <div class="relative z-10 max-w-7xl mx-auto px-4 w-full">
             <h1 class="text-5xl md:text-7xl font-extrabold text-white leading-tight uppercase tracking-tighter">
                 Энергия <br><span class="text-blue-500">вашего роста</span>
             </h1>
-            <p class="mt-8 text-xl text-gray-300 font-light leading-relaxed max-w-xl">
-                Поставка высокотехнологичного промышленного оборудования и комплексные инжиниринговые решения.
+            <p class="mt-8 text-xl text-gray-200 font-light leading-relaxed max-w-xl">
+                Поставка высокотехнологичного промышленного оборудования и комплексные инжиниринговые решения для лидеров отрасли.
             </p>
             <div class="mt-12">
-                <a href="#partners" class="inline-block bg-blue-600 text-white px-10 py-5 text-sm font-bold uppercase tracking-widest hover:bg-blue-700 transition shadow-2xl">
+                <a href="#partners" class="inline-block bg-blue-600 text-white px-10 py-5 text-sm font-bold uppercase tracking-widest hover:bg-blue-700 transition">
                     Смотреть оборудование
                 </a>
             </div>
@@ -63,21 +63,21 @@
     <section id="services" class="py-24 bg-slate-50">
         <div class="max-w-7xl mx-auto px-4">
             <div class="text-center mb-16">
-                <h2 class="text-sm font-bold text-blue-600 uppercase tracking-widest mb-4">Наши услуги</h2>
-                <p class="text-3xl font-light text-gray-900">Комплексный инжиниринг</p>
+                <h2 class="text-sm font-bold text-blue-600 uppercase tracking-[0.3em] mb-4">Наши услуги</h2>
+                <p class="text-3xl font-light text-gray-900">Комплексный подход к задачам</p>
             </div>
-            <div class="grid md:grid-cols-3 gap-12">
-                <div class="bg-white p-8 shadow-sm rounded-lg border border-gray-100">
-                    <div class="text-blue-600 mb-6 font-bold text-xl">01. Проектирование</div>
-                    <p class="text-gray-600 font-light">Разработка проектной документации и подбор оборудования под индивидуальные задачи заказчика.</p>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-10 border border-gray-100 shadow-sm">
+                    <div class="text-blue-600 mb-6 font-bold text-lg">Проектирование</div>
+                    <p class="text-gray-600 font-light leading-relaxed">Профессиональный подбор оборудования и разработка схем интеграции в существующие процессы.</p>
                 </div>
-                <div class="bg-white p-8 shadow-sm rounded-lg border border-gray-100">
-                    <div class="text-blue-600 mb-6 font-bold text-xl">02. Монтаж и пусконаладка</div>
-                    <p class="text-gray-600 font-light">Шеф-монтаж оборудования на объекте и ввод систем в промышленную эксплуатацию.</p>
+                <div class="bg-white p-10 border border-gray-100 shadow-sm">
+                    <div class="text-blue-600 mb-6 font-bold text-lg">Шеф-монтаж</div>
+                    <p class="text-gray-600 font-light leading-relaxed">Контроль за установкой оборудования и проведение пусконаладочных работ инженерами.</p>
                 </div>
-                <div class="bg-white p-8 shadow-sm rounded-lg border border-gray-100">
-                    <div class="text-blue-600 mb-6 font-bold text-xl">03. Сервис и поддержка</div>
-                    <p class="text-gray-600 font-light">Гарантийное и постгарантийное обслуживание, поставка запасных частей и модернизация.</p>
+                <div class="bg-white p-10 border border-gray-100 shadow-sm">
+                    <div class="text-blue-600 mb-6 font-bold text-lg">Сервис</div>
+                    <p class="text-gray-600 font-light leading-relaxed">Поставка оригинальных запчастей и техническое обслуживание на протяжении всего срока службы.</p>
                 </div>
             </div>
         </div>
@@ -86,41 +86,41 @@
     <section id="partners" class="py-32 bg-white">
         <div class="max-w-7xl mx-auto px-4">
             <div class="text-center mb-24">
-                <h2 class="text-sm font-bold text-blue-600 uppercase tracking-widest mb-4">Наши партнеры</h2>
+                <h2 class="text-sm font-bold text-blue-600 uppercase tracking-[0.3em] mb-4">Наши партнеры</h2>
                 <p class="text-4xl font-light text-gray-900 uppercase">Мировые лидеры индустрии</p>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="group p-10 bg-slate-50 border border-gray-100 hover:border-blue-200 transition-all">
-                    <div class="h-20 mb-8 flex items-center">
-                        <img src="assets/matec-logo.png" alt="Matec" class="max-h-full object-contain grayscale group-hover:grayscale-0 transition">
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="group text-center md:text-left">
+                    <div class="h-20 mb-8 flex items-center justify-center md:justify-start">
+                        <img src="assets/matec.png" alt="Matec" class="h-12 object-contain grayscale group-hover:grayscale-0 transition">
                     </div>
                     <h3 class="text-2xl font-bold mb-4">MATEC Industries</h3>
-                    <p class="text-gray-600 font-light mb-8 italic text-sm">Италия</p>
-                    <div class="space-y-4 pt-6 border-t border-gray-200">
-                        <a href="docs/matec1.pdf" target="_blank" class="block text-xs font-bold uppercase tracking-widest text-blue-600 hover:underline">→ Каталог оборудования</a>
-                        <a href="docs/matec2.pdf" target="_blank" class="block text-xs font-bold uppercase tracking-widest text-blue-600 hover:underline">→ Технический каталог</a>
+                    <p class="text-gray-600 font-light mb-8">Итальянские системы фильтрации и очистки сточных вод для горнорудной отрасли.</p>
+                    <div class="space-y-4 pt-6 border-t border-gray-100">
+                        <a href="docs/matec1.pdf" target="_blank" class="block text-xs font-bold uppercase tracking-widest text-blue-600 hover:text-blue-800 transition">→ Каталог 01</a>
+                        <a href="docs/matec2.pdf" target="_blank" class="block text-xs font-bold uppercase tracking-widest text-blue-600 hover:text-blue-800 transition">→ Каталог 02</a>
                     </div>
                 </div>
 
-                <div class="group p-10 bg-slate-50 border border-gray-100 hover:border-blue-200 transition-all">
-                    <div class="h-20 mb-8 flex items-center">
-                        <img src="assets/alfa-logo.png" alt="Alfa Pompe" class="max-h-full object-contain grayscale group-hover:grayscale-0 transition">
+                <div class="group text-center md:text-left">
+                    <div class="h-20 mb-8 flex items-center justify-center md:justify-start">
+                        <img src="assets/alfa.png" alt="Alfa Pompe" class="h-12 object-contain grayscale group-hover:grayscale-0 transition">
                     </div>
                     <h3 class="text-2xl font-bold mb-4">ALFA Pompe</h3>
-                    <p class="text-gray-600 font-light mb-8 italic text-sm">Италия</p>
-                    <div class="space-y-4 pt-6 border-t border-gray-200">
-                        <a href="docs/alfa-catalog.pdf" target="_blank" class="block text-xs font-bold uppercase tracking-widest text-blue-600 hover:underline">→ Каталог ALFA</a>
+                    <p class="text-gray-600 font-light mb-8">Насосное оборудование для работы с абразивными и агрессивными шламами.</p>
+                    <div class="space-y-4 pt-6 border-t border-gray-100">
+                        <a href="docs/alfa-catalog.pdf" target="_blank" class="block text-xs font-bold uppercase tracking-widest text-blue-600 hover:text-blue-800 transition">→ Каталог насосов</a>
                     </div>
                 </div>
 
-                <div class="group p-10 bg-slate-50 border border-gray-100 hover:border-blue-200 transition-all">
-                    <div class="h-20 mb-8 flex items-center">
-                        <img src="assets/ifm-logo.png" alt="IFM" class="max-h-full object-contain grayscale group-hover:grayscale-0 transition">
+                <div class="group text-center md:text-left">
+                    <div class="h-20 mb-8 flex items-center justify-center md:justify-start">
+                        <img src="assets/ifm.png" alt="IFM" class="h-12 object-contain grayscale group-hover:grayscale-0 transition">
                     </div>
-                    <h3 class="text-2xl font-bold mb-4">Italian Fluid Machines</h3>
-                    <p class="text-gray-600 font-light mb-8 italic text-sm">Италия</p>
-                    <p class="text-[10px] uppercase text-gray-400 mt-8 tracking-widest">Техническая информация по запросу</p>
+                    <h3 class="text-2xl font-bold mb-4">IFM (Italy)</h3>
+                    <p class="text-gray-600 font-light mb-8">Специализированное насосное оборудование стандарта API для нефтехимии.</p>
+                    <p class="text-[10px] uppercase text-gray-400 mt-8 tracking-widest italic">Информация доступна по запросу</p>
                 </div>
             </div>
         </div>
@@ -129,21 +129,18 @@
     <section id="about" class="py-32 bg-slate-900 text-white">
         <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-20 items-center">
             <div>
-                <h2 class="text-sm font-bold text-blue-500 uppercase tracking-widest mb-8">О компании</h2>
-                <p class="text-4xl font-light leading-tight mb-10">NRG Prime — надежный партнер в реализации инженерных решений.</p>
-                <div class="space-y-6 text-lg text-gray-400 font-light">
-                    <p>Мы специализируемся на поставке оборудования для нефтегазового и горно-обогатительного секторов Казахстана.</p>
-                    <p>Прямые партнерские отношения с заводами Европы позволяют нам предлагать лучшие условия и сервис.</p>
-                </div>
+                <h2 class="text-sm font-bold text-blue-500 uppercase tracking-[0.3em] mb-8">О компании</h2>
+                <p class="text-4xl font-light leading-tight mb-10">NRG Prime — Ваш эксперт в мире промышленного инжиниринга.</p>
+                <p class="text-lg text-gray-400 font-light leading-relaxed">Мы обеспечиваем прямые поставки оборудования из Европы, гарантируя качество и полную техническую поддержку на всех этапах реализации проекта.</p>
             </div>
-            <div class="grid grid-cols-2 gap-4">
-                <div class="bg-slate-800 p-12 text-center">
-                    <div class="text-5xl font-bold text-blue-500 mb-2">100%</div>
-                    <div class="text-xs uppercase tracking-widest text-gray-500">Качество</div>
+            <div class="grid grid-cols-2 gap-6">
+                <div class="border border-slate-700 p-10 text-center">
+                    <div class="text-4xl font-bold text-blue-500 mb-2">100%</div>
+                    <div class="text-[10px] uppercase tracking-[0.2em] text-gray-500">Оригинальность</div>
                 </div>
-                <div class="bg-slate-800 p-12 text-center mt-12">
-                    <div class="text-5xl font-bold text-blue-500 mb-2">Direct</div>
-                    <div class="text-xs uppercase tracking-widest text-gray-500">Поставки</div>
+                <div class="border border-slate-700 p-10 text-center mt-10">
+                    <div class="text-4xl font-bold text-blue-500 mb-2">Direct</div>
+                    <div class="text-[10px] uppercase tracking-[0.2em] text-gray-500">Логистика</div>
                 </div>
             </div>
         </div>
@@ -151,8 +148,8 @@
 
     <footer class="bg-white py-16 border-t border-gray-100">
         <div class="max-w-7xl mx-auto px-4 text-center">
-            <img src="assets/logo.png" alt="NRG Prime" class="h-16 w-auto mx-auto mb-10 grayscale opacity-50">
-            <p class="text-[10px] text-gray-400 uppercase tracking-[0.2em]">© 2024-2026 ТОО «NRG Prime». Все права защищены.</p>
+            <img src="assets/logo.png" alt="NRG Prime" class="h-12 w-auto mx-auto mb-8 grayscale opacity-50">
+            <p class="text-[10px] text-gray-400 uppercase tracking-widest">© 2024-2026 ТОО «NRG Prime». Все права защищены.</p>
         </div>
     </footer>
 
