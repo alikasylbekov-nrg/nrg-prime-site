@@ -1,3 +1,6 @@
+Вот полный исправленный код для файла kz.html. Я применил те же настройки фонового изображения и стили заголовка, что и в предыдущих версиях, сохранив при этом весь ваш казахский текст.
+
+HTML
 <!DOCTYPE html>
 <html lang="kk">
 <head>
@@ -11,6 +14,14 @@
         .accent-border { border-left: 4px solid #57A9B6; }
         .partner-logo { transition: all 0.3s ease; opacity: 1; }
         .group:hover .partner-logo { transform: scale(1.05); }
+
+        /* HERO BACKGROUND SETTINGS */
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('hero-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
     </style>
 </head>
 <body class="bg-white">
@@ -40,16 +51,16 @@
         </div>
     </nav>
 
-    <header class="relative py-24 bg-slate-50 overflow-hidden border-b border-gray-100">
+    <header class="relative py-32 hero-bg overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center md:text-left">
-            <h1 class="text-5xl font-extrabold text-gray-900 mb-6 tracking-tight">NRG Prime</h1>
-            <p class="text-xl text-gray-600 max-w-3xl leading-relaxed mb-10">
+            <h1 class="text-6xl font-extrabold text-white mb-6 tracking-tight">NRG Prime</h1>
+            <p class="text-xl text-gray-100 max-w-3xl leading-relaxed mb-10">
                 Италия мен Еуропа елдерінен жоғары технологиялық өнеркәсіптік жабдықтарды тікелей жеткізу. 
                 Қазақстанның тау-кен және энергетика салаларына арналған толық циклді инжинирингтік шешімдер.
             </p>
             <div class="flex flex-col md:flex-row gap-4 justify-center md:justify-start">
-                <a href="#partners" class="bg-gray-900 text-white px-10 py-4 rounded-md font-bold hover:bg-gray-800 transition shadow-lg text-sm uppercase">Жабдықтар каталогы</a>
-                <a href="contacts-kz.html" class="bg-white text-gray-900 border border-gray-300 px-10 py-4 rounded-md font-bold hover:bg-50 transition text-sm uppercase">Бізбен байланысу</a>
+                <a href="#partners" class="bg-blue-600 text-white px-10 py-4 rounded-md font-bold hover:bg-blue-700 transition shadow-lg text-sm uppercase text-center">Жабдықтар каталогы</a>
+                <a href="contacts-kz.html" class="bg-white/10 backdrop-blur-sm text-white border border-white/30 px-10 py-4 rounded-md font-bold hover:bg-white/20 transition text-sm uppercase text-center">Бізбен байланысу</a>
             </div>
         </div>
     </header>
@@ -161,8 +172,12 @@
                 </div>
                 <div>
                     <h3 class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-6">Байланыс</h3>
-                    <p class="text-lg underline underline-offset-8">info@nrg-prime.com</p>
-                    <p class="text-2xl font-bold mt-4">+7 701 210 20 90</p>
+                    <p class="text-lg underline underline-offset-8">
+                        <a href="mailto:info@nrg-prime.com" class="hover:text-blue-400 transition">info@nrg-prime.com</a>
+                    </p>
+                    <p class="text-2xl font-bold mt-4">
+                        <a href="tel:+77012102090" class="hover:text-blue-400 transition">+7 701 210 20 90</a>
+                    </p>
                 </div>
                 <div>
                     <h3 class="text-xs font-bold uppercase tracking-widest text-gray-400 mb-6">NRG Prime</h3>
@@ -173,5 +188,4 @@
     </footer>
 </body>
 </html>
-
 
