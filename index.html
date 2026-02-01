@@ -11,6 +11,14 @@
         .accent-border { border-left: 4px solid #57A9B6; }
         .partner-logo { transition: all 0.3s ease; filter: none; opacity: 1; }
         .group:hover .partner-logo { transform: scale(1.05); }
+        
+        /* НОВЫЙ БЛОК ДЛЯ ФОТО-ПОДЛОЖКИ */
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('hero-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
     </style>
 </head>
 <body class="bg-white">
@@ -42,16 +50,16 @@
         </div>
     </nav>
 
-    <header class="relative py-24 bg-slate-50 overflow-hidden border-b border-gray-100">
+    <header class="relative py-32 hero-bg overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center md:text-left">
-            <h1 class="text-5xl font-extrabold text-gray-900 mb-6 tracking-tight">NRG Prime</h1>
-            <p class="text-xl text-gray-600 max-w-3xl leading-relaxed mb-10">
+            <h1 class="text-6xl font-extrabold text-white mb-6 tracking-tight">NRG Prime</h1>
+            <p class="text-xl text-gray-100 max-w-3xl leading-relaxed mb-10">
                 Прямые поставки высокотехнологичного промышленного оборудования из Италии и стран Европы. 
                 Инжиниринговые решения полного цикла для горнодобывающей и энергетической отраслей Казахстана.
             </p>
             <div class="flex flex-col md:flex-row gap-4 justify-center md:justify-start">
-                <a href="#partners" class="bg-gray-900 text-white px-10 py-4 rounded-md font-bold hover:bg-gray-800 transition shadow-lg text-sm uppercase">Каталог оборудования</a>
-                <a href="contacts.html" class="bg-white text-gray-900 border border-gray-300 px-10 py-4 rounded-md font-bold hover:bg-gray-50 transition text-sm uppercase">Наши контакты</a>
+                <a href="#partners" class="bg-blue-600 text-white px-10 py-4 rounded-md font-bold hover:bg-blue-700 transition shadow-lg text-sm uppercase text-center">Каталог оборудования</a>
+                <a href="contacts.html" class="bg-white/10 backdrop-blur-sm text-white border border-white/30 px-10 py-4 rounded-md font-bold hover:bg-white/20 transition text-sm uppercase text-center">Наши контакты</a>
             </div>
         </div>
     </header>
@@ -185,5 +193,3 @@
 
 </body>
 </html>
-
-
